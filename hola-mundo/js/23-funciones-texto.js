@@ -2,7 +2,7 @@
 //Transformación de textos
 
 var numero = 44;
-var texto1 = "Bienvenido al curso de JavasScript curso de Leonardo"
+var texto1 = "   Bienvenido al curso de JavasScript de Leonardo    "
 var texto2 = "Es cool";
 
 // var dato = numero.toString();
@@ -32,4 +32,8 @@ var busqueda = texto1.charAt(44);
 var busqueda = texto1.startsWith("Bien");
 var busqueda = texto1.endsWith("Leonardo");
 var busqueda = texto1.includes("JavasScript");
+var busqueda = texto1.replace("JavasScript", "Symfony");
+var busqueda = texto1.slice(14, 22);
+var busqueda = texto1.split(" ");
+var busqueda = texto1.trim();
 console.log(busqueda);
