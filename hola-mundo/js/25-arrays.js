@@ -5,8 +5,8 @@ var nombres =["Leonardo Hernández", "Monica Juliana", "Manuel Alejandro", "Dama
 
 var lenguajes = new Array("PHP","JS","Go", "Java","c#", "pascal","C++");
 
-console.log(nombres.length);
-console.log(lenguajes);
+// console.log(nombres.length);
+// console.log(lenguajes);
 
 // var elemento = parseInt(prompt("¿Qué elemento del array quieres?",0));
 // if (elemento >= nombres.length) {
@@ -22,8 +22,21 @@ document.write("<ul>")
 //   document.write("<li>"+lenguajes[i]+"</li>");
 // }
 
-lenguajes.forEach((elemento,indice)=>{
-  document.write("<li>"+indice+" "+elemento+"</li>");
-});
+// lenguajes.forEach((elemento,indice)=>{
+//   document.write("<li>"+indice+" "+elemento+"</li>");
+// });
+
+for (var lenguaje in lenguajes) {
+  document.write("<li>"+lenguajes[lenguaje]+"</li>");
+}
 
 document.write("</ul>");
+
+//busquedas en Un array
+
+var busqueda = lenguajes.findIndex(lenguaje => lenguaje == "JS");
+console.log(busqueda);
+
+var precios = [10, 20 , 30, 50, 80, 12]
+var busqueda = precios.some(precio => precio >= 10);
+console.log(busqueda);
