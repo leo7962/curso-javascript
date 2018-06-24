@@ -47,3 +47,28 @@ seccion.prepend(hr);
 // console.log(contenidoEnTexto);
 
 //conseguir elementos por su clase
+
+var divsRojos = document.getElementsByClassName('rojo');
+var divsAmarillos = document.getElementsByClassName('amarillo');
+
+for (var div in divsRojos) {
+  if (divsRojos[div].className == "rojo") {
+    console.log(divsRojos[div]);
+    divsRojos[div].style.background = "red";
+  }
+}
+// querySelector
+var id = document.querySelector("#encabezado");
+console.log(id);
+for (var div in divsAmarillos) {
+  if (divsAmarillos[div].className == "amarillo") {
+    console.log(divsAmarillos[div]);
+    divsAmarillos[div].style.background = "yellow";
+  }
+}
+
+var claseRojo = document.querySelector("div.rojo")
+console.log(claseRojo);
+
+var etiqueta = document.querySelector("div")
+console.log(etiqueta);
