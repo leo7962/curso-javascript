@@ -27,10 +27,33 @@ boton.addEventListener('click', function() {cambiaColor()});
 
 boton.addEventListener('mouseover', function() {
   boton.style.background = "yellow";
-})
+});
 
 //Mouse out
 
 boton.addEventListener('mouseout', function() {
   boton.style.background = "#ccc";
-})
+});
+
+//Focus
+var input = document.querySelector("#campo_nombre");
+input.addEventListener('focus', function() {
+  console.log("[focus] estas dentro del input");
+});
+
+// Blur
+input.addEventListener('blur', function() {
+  console.log("[blur] estas fuera del input");
+});
+//Keydown
+input.addEventListener('keydown', function() {
+  console.log("[keydown] has pulsado una tecla", String.fromCharCode(event.keyCode));
+});
+//Keypress
+input.addEventListener('keypress', function() {
+  console.log("[keypress] tecla presionada", String.fromCharCode(event.keyCode));
+});
+//Keyup
+input.addEventListener('keyup', function() {
+  console.log("[keyup] tecla soltada", String.fromCharCode(event.keyCode));
+});
