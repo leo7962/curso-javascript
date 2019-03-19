@@ -20,7 +20,10 @@ window.addEventListener('load', () => {
 
   var boton = document.querySelector("#boton");
   //click
-  boton.addEventListener('click', function() {cambiaColor()});
+    boton.addEventListener('click', function () {
+        cambiaColor();
+        boton.style.border = "10 px solid black";
+    });
 
   //Mouse over
 
