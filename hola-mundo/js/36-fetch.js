@@ -18,7 +18,5 @@ fetch('https://jsonplaceholder.typicode.com/users')
       div_usuarios.appendChild(nombre);
 
       document.querySelector(".loading").style.display ='none';
-
     });
-
   });
