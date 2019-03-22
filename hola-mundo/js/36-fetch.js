@@ -2,6 +2,7 @@
 
 //Fetch (AJAX) y peticiones a servicios / apis rest
 var div_usuarios = document.querySelector("#usuarios");
+var div_profesor = document.querySelector("#profesor");
 var div_usuario = document.querySelector("#usuario");
 
 
@@ -10,12 +11,20 @@ var div_usuario = document.querySelector("#usuario");
     .then(users => {
       listadoUsuarios(users.data);
 
+      return getInfo();
+    })
+    .then(data => {
+      div_profesor.innerHTML = data;
       return getUsuario();
     })
     .then(data =>data.json())
     .then(user => {
       usuario(user.data);
+    })
+    .catch(error => {
+      alert("Error en las peticiones");
     });
+
 
   function getUsuarios() {
     return fetch('https://reqres.in/api/users');
@@ -23,6 +32,27 @@ var div_usuario = document.querySelector("#usuario");
 
   function getUsuario() {
     return fetch('https://reqres.in/api/users/2');
+  }
+
+  function getInfo() {
+    var profesor = {
+        nombre: 'Leonardo',
+        apellidos: 'Hernández',
+        url: 'https://www.facebook.com'
+    };
+
+    return new Promise((resolve, reject) =>{
+      var profesor_string = "";
+      setTimeout(function () {
+         profesor_string = JSON.stringify(profesor);
+         if (typeof profesor_string != 'string' || profesor_string == '') return reject('error');
+
+         return resolve(profesor_string);
+      }, 3000);
+      var profesor_string = JSON.stringify(profesor);
+
+
+    });
   }
 
   function listadoUsuarios(usuarios) {
