@@ -13,14 +13,14 @@
 12 silly mapToRegistry uri https://registry.npmjs.org/jquery
 13 verbose request uri https://registry.npmjs.org/jquery
 14 verbose request no auth needed
-15 info attempt registry request try #1 at 10:30:50 PM
-16 verbose request id 40988eb341212a35
+15 info attempt registry request try #1 at 12:26:04 PM
+16 verbose request id 9e42e70d37884d90
 17 http request GET https://registry.npmjs.org/jquery
 18 info retry will retry, error on last attempt: Error: socket hang up
-19 info attempt registry request try #2 at 10:31:09 PM
+19 info attempt registry request try #2 at 12:26:47 PM
 20 http request GET https://registry.npmjs.org/jquery
 21 info retry will retry, error on last attempt: Error: socket hang up
-22 info attempt registry request try #3 at 10:32:10 PM
+22 info attempt registry request try #3 at 12:27:47 PM
 23 http request GET https://registry.npmjs.org/jquery
 24 silly fetchPackageMetaData Error: socket hang up
 24 silly fetchPackageMetaData     at TLSSocket.onHangUp (_tls_wrap.js:1137:19)

@@ -8,17 +8,31 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="js/01-selectores.js">
-
-  </script>
-
+  <script type="text/javascript" src="js/01-selectores.js">  </script>
+  <style media="screen">
+    .zebra{
+      border: 5px dashed black;
+    }
+    .grande{
+      font-size: 30px;
+    }
+  </style>
   </head>
   <body>
     <h1>Aprendiendo del uso de Jquery</h1>
-    <p id="rojo">Ejercicio de JQuery</p>
-    <p id="amarillo">Practicando con selectores </p>
-    <p id="verde">Quiereo ser un parrafo verde </p>
-    <p></p>
+
+    <ul>
+      <li><a href="https://google.com"> </a></li>
+      <li> <a href="https://es.slideshare.net/iorivskio/vibraciones-fourier"></a> </li>
+      <li> <a href="https://www.youtube.com/watch?v=JYgfgBayshQ&t=122s"></a></li>
+      <li> <a href="http://raerpo2.blogspot.com/2011/01/series-de-fourier-con-python.html"> </a></li>
+    </ul>
+
+
+    <p id="rojo" class="sin_borde">Ejercicio de JQuery</p>
+    <p id="amarillo" class="zebra">Practicando con selectores </p>
+    <p id="verde" class="sin_borde">Quiereo ser un parrafo verde </p>
+    <p class="zebra">Soy un parrafo blanco</p>
 
   </body>
 </html>
