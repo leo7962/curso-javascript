@@ -33,5 +33,12 @@ parrafos.click(function () {
     }
   });
   //selectores de atributo
+  $('[title = "Google"]').css('background', '#ccc');
+  $('[title = "Facebook"]').css('background', 'blue');
+
+  //Otros
+  //$('p, a').addClass('margen-superior');
+   var busqueda = $("#elemento2").parent().parent().find('.resaltado');
+   console.log(busqueda);
 
 });

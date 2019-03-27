@@ -16,16 +16,23 @@
     .grande{
       font-size: 30px;
     }
+    .margen-superior{
+      display: block;
+      margin-top: 45px;
+    }
+    .resaltado{
+      border-bottom: 2px solid green;
+    }
   </style>
   </head>
   <body>
     <h1>Aprendiendo del uso de Jquery</h1>
 
     <ul>
-      <li><a href="https://google.com"> </a></li>
-      <li> <a href="https://facebook.com"></a> </li>
-      <li> <a href="https://instagram.com"></a></li>
-      <li> <a href="http://twitter.com"> </a></li>
+      <li><a href="https://google.com" title="Google">Ir a Google </a></li>
+      <li> <a href="https://facebook.com" title="Facebook">Ir a Facebook</a> </li>
+      <li> <a href="https://instagram.com" title="Instagram">Ir a Instagram</a></li>
+      <li> <a href="http://twitter.com" title="Twitter">Ir a Twitter</a></li>
     </ul>
 
 
@@ -33,6 +40,15 @@
     <p id="amarillo" class="zebra">Practicando con selectores </p>
     <p id="verde" class="sin_borde">Quiereo ser un parrafo verde </p>
     <p class="zebra">Soy un parrafo blanco</p>
+
+    <div id="caja">
+      <p>Hola soy una caja</p>
+      <ul>
+        <li>Elemento 1</li>
+        <li id="elemento2">Elemento 2</li>
+      </ul>
+      <span class="resaltado">Soy un span</span>
+    </div>
 
   </body>
 </html>
