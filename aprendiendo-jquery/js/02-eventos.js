@@ -34,4 +34,33 @@ $(document).ready(function () {
     $(this).css("background", "pink")
            .css("color", "black");
   });
+
+  //Focus y blur
+  var nombre = $("#nombre");
+  var datos = $("#datos");
+  nombre.focus(function() {
+    $(this).css("border","2px solid green");
+  });
+
+  nombre.blur(function() {
+    $(this).css("border","1px solid #ccc");
+    datos.text($(this).val()).show();
+  });
+
+  // Mousedowm y Mouseup
+  datos.mousedown(function() {
+    $(this).css("border-color","gray");
+  });
+
+  datos.mouseup(function() {
+    $(this).css("border-color","black");
+  });
+
+  //Mousemove
+  $(document).mousemove(function() {
+    console.log("En el eje X: "+event.clientX);
+    console.log("En el eje Y: "+event.clientY);
+    $("#sigueme")
+  });
+
 });

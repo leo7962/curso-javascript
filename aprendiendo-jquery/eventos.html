@@ -21,10 +21,45 @@
         background: red;
         cursor:pointer;
       } */
+      input {
+        padding: 10px;
+        width: 200px;
+        font-size: 20px
+      }
+      #datos{
+        border: 4px dashed black;
+        padding: 10px;
+        width: 250px;
+        height: 50px;
+        margin-top: 10px;
+        display: none;
+      }
+      #sigueme{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        display: block;
+        background: blue;
+        opacity: 0.25;
+        border-radius: 999px;
+      }
     </style>
   </head>
   <body>
     <h1>Aprendiendo del uso de Jquery</h1>
+
+    <div id="sigueme">
+
+    </div>
+
+    <form method="post">
+      <input type="text" id="nombre" >
+    </form>
+
+    <div id="datos">
+    </div>
+
+    <br>
 
     <div id="caja">
       Soy una caja bien misifus
