@@ -40,5 +40,4 @@ parrafos.click(function () {
   //$('p, a').addClass('margen-superior');
    var busqueda = $("#elemento2").parent().parent().find('.resaltado');
    console.log(busqueda);
-
 });
