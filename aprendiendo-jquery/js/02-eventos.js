@@ -60,7 +60,7 @@ $(document).ready(function () {
   $(document).mousemove(function() {
     console.log("En el eje X: "+event.clientX);
     console.log("En el eje Y: "+event.clientY);
-    $("#sigueme")
+    $('body').css("cursor","none");
+    $("#sigueme").css("left", event.clientX).css("top", event.clientY);
   });
-
 });
