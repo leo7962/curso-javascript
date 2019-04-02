@@ -1,3 +1,6 @@
 $(document).ready(function() {
-  alert("hola");
+    alert("hola");
+    $('a').each(function() {
+
+    });
 });
