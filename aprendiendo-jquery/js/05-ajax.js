@@ -1,11 +1,13 @@
-$(document).ready(function () {
+$(document).ready(function() {
   //Load
   //$('#datos').load('https://reqres.in');
 
   //Get
-  $.get('https://reqres.in/api/users',{page: 3}, function (response) {
-    response.data.forEach((element, index) =>{
-        $('#datos').append("<p>"+element.first_name+" "+element.last_name+"</p>");
+  $.get('https://reqres.in/api/users', {
+    page: 3
+  }, function(response) {
+    response.data.forEach((element, index) => {
+      $('#datos').append("<p>" + element.first_name + " " + element.last_name + "</p>");
     });
   });
 
@@ -28,7 +30,7 @@ $(document).ready(function () {
       type: 'post',
       url: $(this).attr("action"),
       data: usuario,
-      beforeSend: function () {
+      beforeSend: function() {
         console.log("Enviando usuario...");
       },
       success: function(response) {
@@ -37,7 +39,7 @@ $(document).ready(function () {
       error: function() {
         console.log("Ha ocurrido un error");
       },
-      timeout:2000,
+      timeout: 2000,
     });
     return false;
   });
