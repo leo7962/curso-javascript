@@ -31,6 +31,15 @@ $(document).ready(function() {
     //$('.caja-efectos').toggle("fold");
     //$('.caja-efectos').toggle("puff");
     //$('.caja-efectos').toggle("scale");
-    $('.caja-efectos').toggle("shake",4000);
+    $('.caja-efectos').toggle("shake", 4000);
   });
+
+  //ToolTip
+  $(document).tooltip();
+  //Diaolog
+  $("#lanzar").click(function() {
+    $("#popup").dialog();
+  });
+
+
 });
