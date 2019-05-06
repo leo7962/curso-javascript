@@ -41,5 +41,11 @@ $(document).ready(function() {
     $("#popup").dialog();
   });
 
+  //datePicker
+  $("#calendario").datepicker();
+
+  //Tabs
+$("#pestañas").tabs();
+
 
 });
