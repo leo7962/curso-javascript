@@ -12,13 +12,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <!-- Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!-- Slider -->
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <!-- Mis scripts -->
   <script type="text/javascript" src="js/main.js"> </script>
-  <!--Moment JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js" charset="utf-8"></script>
+  <!--Jquery UI -->
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css">
+  <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
 
 </head>
 
@@ -47,20 +48,32 @@
       </nav>
     </header>
 
-    <!-- Silider -->
-    <div id="slider">
 
-      <div class="bxslider">
-        <div><img src="img/hojas.jpg" title="Funky roots"></div>
-        <div><img src="img/rojo.jpg" title="The long and winding road"></div>
-        <div><img src="img/cielo.jpg" title="Happy trees"></div>
-      </div>
-
-    </div>
     <!-- Contenido -->
     <section id="content">
-      <div id="posts">
-        <!-- Cargar los post desde JSON-->
+      <div id="box">
+        <!-- Cargar acordeon-->
+        <h2>Sobre Mí</h2>
+        <div id="acordeon">
+          <h3>¿Quienes somos?</h3>
+          <div >
+            <p>Sed ultrices eros ut nulla tempor, nec aliquam nisi laoreet. Morbi urna nisi, viverra sit amet felis a, eleifend bibendum est. Nam condimentum purus urna, quis ornare orci porttitor ut. Cras tincidunt nunc nibh, sit amet faucibus tortor
+              blandit sit amet. Morbi eleifend lacus erat, et pellentesque dui placerat in. Donec lobortis pulvinar venenatis. Praesent condimentum, enim at lobortis sagittis, dui mauris rhoncus risus, lobortis porta sapien diam sed orci. Morbi
+              pulvinar risus id molestie lacinia. Nam ipsum libero, suscipit et nisl vitae, efficitur imperdiet tellus.</p>
+          </div>
+          <h3>Nuestros servicios</h3>
+          <div >
+            <p>Sed ultrices eros ut nulla tempor, nec aliquam nisi laoreet. Morbi urna nisi, viverra sit amet felis a, eleifend bibendum est. Nam condimentum purus urna, quis ornare orci porttitor ut. Cras tincidunt nunc nibh, sit amet faucibus tortor
+              blandit sit amet. Morbi eleifend lacus erat, et pellentesque dui placerat in. Donec lobortis pulvinar venenatis. Praesent condimentum, enim at lobortis sagittis, dui mauris rhoncus risus, lobortis porta sapien diam sed orci. Morbi
+              pulvinar risus id molestie lacinia. Nam ipsum libero, suscipit et nisl vitae, efficitur imperdiet tellus.</p>
+          </div>
+          <h3>Nuestros Clientes</h3>
+          <div >
+            <p>Sed ultrices eros ut nulla tempor, nec aliquam nisi laoreet. Morbi urna nisi, viverra sit amet felis a, eleifend bibendum est. Nam condimentum purus urna, quis ornare orci porttitor ut. Cras tincidunt nunc nibh, sit amet faucibus tortor
+              blandit sit amet. Morbi eleifend lacus erat, et pellentesque dui placerat in. Donec lobortis pulvinar venenatis. Praesent condimentum, enim at lobortis sagittis, dui mauris rhoncus risus, lobortis porta sapien diam sed orci. Morbi
+              pulvinar risus id molestie lacinia. Nam ipsum libero, suscipit et nisl vitae, efficitur imperdiet tellus.</p>
+          </div>
+        </div>
 
       </div>
       <aside id="sidebar">
