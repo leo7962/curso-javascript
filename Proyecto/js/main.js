@@ -13,29 +13,92 @@ $(document).ready(function() {
   // Almacenamiento por post
   var posts = [{
       title: 'Prueba de titulo 1',
-      date: new Date(),
+      date: 'Publicado el día: ' + moment().format("DD") + ' de ' + moment().format("MMMM ") + 'del ' + moment().format("YYYY"),
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae orci auctor, volutpat sem ut, sodales dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed dapibus urna, et sodales orci. Etiam lacinia rutrum mi non vehicula. Phasellus bibendum feugiat elementum. Curabitur ultricies vehicula congue. Integer venenatis id nibh ac eleifend. Suspendisse ut elementum orci. Praesent lectus justo, viverra a turpis ac, feugiat commodo sapien. In mollis tincidunt justo, quis mattis lacus maximus sed. Suspendisse bibendum mattis rutrum. Nulla gravida tempor mauris. Suspendisse maximus libero metus, in fringilla sapien tristique nec. Duis eget leo cursus, consectetur lorem ut, porta tortor. Cras vitae fringilla purus, imperdiet vulputate magna.',
     },
     {
       title: 'Prueba de titulo 2',
-      date: new Date(),
+      date: 'Publicado el día: ' + moment().format("DD") + ' de ' + moment().format("MMMM ") + 'del ' + moment().format("YYYY"),
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae orci auctor, volutpat sem ut, sodales dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed dapibus urna, et sodales orci. Etiam lacinia rutrum mi non vehicula. Phasellus bibendum feugiat elementum. Curabitur ultricies vehicula congue. Integer venenatis id nibh ac eleifend. Suspendisse ut elementum orci. Praesent lectus justo, viverra a turpis ac, feugiat commodo sapien. In mollis tincidunt justo, quis mattis lacus maximus sed. Suspendisse bibendum mattis rutrum. Nulla gravida tempor mauris. Suspendisse maximus libero metus, in fringilla sapien tristique nec. Duis eget leo cursus, consectetur lorem ut, porta tortor. Cras vitae fringilla purus, imperdiet vulputate magna.',
     },
     {
       title: 'Prueba de titulo 3',
-      date: new Date(),
+      date: 'Publicado el día: ' + moment().format("DD") + ' de ' + moment().format("MMMM ") + 'del ' + moment().format("YYYY"),
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae orci auctor, volutpat sem ut, sodales dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed dapibus urna, et sodales orci. Etiam lacinia rutrum mi non vehicula. Phasellus bibendum feugiat elementum. Curabitur ultricies vehicula congue. Integer venenatis id nibh ac eleifend. Suspendisse ut elementum orci. Praesent lectus justo, viverra a turpis ac, feugiat commodo sapien. In mollis tincidunt justo, quis mattis lacus maximus sed. Suspendisse bibendum mattis rutrum. Nulla gravida tempor mauris. Suspendisse maximus libero metus, in fringilla sapien tristique nec. Duis eget leo cursus, consectetur lorem ut, porta tortor. Cras vitae fringilla purus, imperdiet vulputate magna.',
     },
     {
       title: 'Prueba de titulo 4',
-      date: new Date(),
+      date: 'Publicado el día: ' + moment().format("DD") + ' de ' + moment().format("MMMM ") + 'del ' + moment().format("YYYY"),
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae orci auctor, volutpat sem ut, sodales dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed dapibus urna, et sodales orci. Etiam lacinia rutrum mi non vehicula. Phasellus bibendum feugiat elementum. Curabitur ultricies vehicula congue. Integer venenatis id nibh ac eleifend. Suspendisse ut elementum orci. Praesent lectus justo, viverra a turpis ac, feugiat commodo sapien. In mollis tincidunt justo, quis mattis lacus maximus sed. Suspendisse bibendum mattis rutrum. Nulla gravida tempor mauris. Suspendisse maximus libero metus, in fringilla sapien tristique nec. Duis eget leo cursus, consectetur lorem ut, porta tortor. Cras vitae fringilla purus, imperdiet vulputate magna.',
     },
     {
       title: 'Prueba de titulo 5',
-      date: new Date(),
+      date: 'Publicado el día: ' + moment().format("DD") + ' de ' + moment().format("MMMM ") + 'del ' + moment().format("YYYY"),
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae orci auctor, volutpat sem ut, sodales dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed dapibus urna, et sodales orci. Etiam lacinia rutrum mi non vehicula. Phasellus bibendum feugiat elementum. Curabitur ultricies vehicula congue. Integer venenatis id nibh ac eleifend. Suspendisse ut elementum orci. Praesent lectus justo, viverra a turpis ac, feugiat commodo sapien. In mollis tincidunt justo, quis mattis lacus maximus sed. Suspendisse bibendum mattis rutrum. Nulla gravida tempor mauris. Suspendisse maximus libero metus, in fringilla sapien tristique nec. Duis eget leo cursus, consectetur lorem ut, porta tortor. Cras vitae fringilla purus, imperdiet vulputate magna.',
+    },
+    {
+      title: 'Prueba de titulo 6',
+      date: 'Publicado el día: ' + moment().format("DD") + ' de ' + moment().format("MMMM ") + 'del ' + moment().format("YYYY"),
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae orci auctor, volutpat sem ut, sodales dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed dapibus urna, et sodales orci. Etiam lacinia rutrum mi non vehicula. Phasellus bibendum feugiat elementum. Curabitur ultricies vehicula congue. Integer venenatis id nibh ac eleifend. Suspendisse ut elementum orci. Praesent lectus justo, viverra a turpis ac, feugiat commodo sapien. In mollis tincidunt justo, quis mattis lacus maximus sed. Suspendisse bibendum mattis rutrum. Nulla gravida tempor mauris. Suspendisse maximus libero metus, in fringilla sapien tristique nec. Duis eget leo cursus, consectetur lorem ut, porta tortor. Cras vitae fringilla purus, imperdiet vulputate magna.',
     },
   ];
-    console.log(posts);
+  posts.forEach((item, index) => {
+    var post = `
+    <article class="post">
+      <h2>${item.title}</h2>
+      <span class="date">${item.date}</span>
+      <p>
+      ${item.content}
+      </p>
+      <p>
+        ${item.content}
+      </p>
+      <a href="#" class="button-more">Leer más</a>
+    </article>`;
+
+    $("#posts").append(post);
+  });
+
+  //Selector de tema
+  var theme = $("#theme");
+  $('#to-green').click(function() {
+    theme.attr('href', 'css/green.css');
+  });
+  $('#to-red').click(function() {
+    theme.attr('href', 'css/red.css');
+  });
+  $('#to-blue').click(function() {
+    theme.attr('href', 'css/blue.css');
+  });
+  //Scroll ariba de la web
+  $('.subir').click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+  // Login falso
+  $("#login form").submit(function() {
+    var form_name = $("#form_name").val();
+
+    localStorage.setItem("form_name", form_name);
+
+  });
+
+  var form_name = localStorage.getItem("form_name");
+
+  if (form_name != null && form_name != "undefined") {
+    var about_parrafo = $("#about p");
+
+    about_parrafo.html("<br><strong>Bienvenido, " + form_name + "</strong> ");
+    about_parrafo.append("<a href='#' id='logout'>Cerrar sesión</a>");
+
+    $("#login").hide();
+
+    $("#logout").click(function() {
+      localStorage.clear();
+      location.reload();
+    });
+  }
 });
