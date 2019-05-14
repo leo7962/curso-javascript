@@ -1,4 +1,4 @@
-var bicicleta = {
+nodevar bicicleta = {
   color: 'rojo',
   modelo: 'bmx',
   frenos: 'de disco',
