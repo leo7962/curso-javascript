@@ -45,6 +45,7 @@ class Camiseta implements CamisetaBase{
 var camiseta = new Camiseta("Rojo", "Manga Larga", "Adidas", "S", 1456);
 // camiseta.setColor("Rojo");
 //camiseta.getColor();
+camiseta.estampacion();
 
 var saco = new Camiseta("Azul", "Manga corta", "Nike", "S", 1567);
 saco.setColor("Azul");
