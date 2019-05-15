@@ -1,9 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div>
   <h1>
     Bienvenido a {{ title }}!
   </h1>
   <p>Aprendiendo a usar Modulos</p>
-</div>
 
+  <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar</button>
+  <button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar componente</button>
+
+
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
+  <zapatillas></zapatillas>
+  <cursos></cursos>
+</div>
 <router-outlet></router-outlet>
