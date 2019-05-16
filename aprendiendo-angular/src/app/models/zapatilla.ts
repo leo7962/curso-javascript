@@ -20,5 +20,5 @@ export class Zapatilla {
        public color: string,
        public precio: number,
        public stock: boolean,
-   ){}
+   ) {}
 }
