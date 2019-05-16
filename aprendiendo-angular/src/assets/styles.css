@@ -4,6 +4,8 @@
 }
 
 .fondoRojo{
-    background: red;
-    text-decoration: underline;
+    background: red; 
+}
+.subrayado{
+      text-decoration: underline;
 }
