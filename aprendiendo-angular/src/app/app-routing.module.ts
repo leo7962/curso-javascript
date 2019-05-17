@@ -11,10 +11,11 @@ import { CursosComponent } from "./cursos/cursos.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  { path: 'home', component: HomeComponent },
+  {path: 'home', component: HomeComponent },
   {path: 'zapatillas', component: ZapatillasComponent},
   {path: 'vieojuego', component: VideojuegoComponent},
-  {path: 'cursos', component: CursosComponent},
+  {path: 'cursos/', component: CursosComponent },
+  {path: 'cursos/:nombre/:followers', component: CursosComponent},
   {path: '**', component: HomeComponent}
 ];
 
