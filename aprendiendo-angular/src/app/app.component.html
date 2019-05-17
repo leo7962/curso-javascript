@@ -8,13 +8,21 @@
   </h1>
   <p>{{descripcion}}</p>
 
-  <!-- <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar</button>
-  <button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar componente</button>
+  <nav>
+    <a [routerLink]="[ '/home' ]" [routerLinkActive]="['active']">Home</a>
+    &nbsp;
+    <a [routerLink]="[ '/zapatillas' ]" [routerLinkActive]="['active']">zapatillas</a>
+    &nbsp;
+    <a [routerLink]="[ 'videojuego' ]" [routerLinkActive]="['active']">videojuego</a>
+    &nbsp;
+    <a [routerLink]="[ '/cursos' ]" [routerLinkActive]="['active']">cursos</a>
+  </nav>
 
+  <hr>
 
-  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
-  <zapatillas></zapatillas>
-  <cursos></cursos> -->
-  <zapatillas></zapatillas>
+  <!-- <videojuego></videojuego> -->
+  <!-- <zapatillas></zapatillas> -->
+  <!-- <cursos></cursos> -->
+  <!-- <zapatillas></zapatillas> -->
 </div>
 <router-outlet></router-outlet>
