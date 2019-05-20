@@ -1,0 +1,19 @@
+<h2>
+  <form #formContacto = "ngForm" (ngSubmit)="onSubtmit()">
+    <label for="nombre">Nombre</label> <br>
+    <input type="text" name="nombre" /> <br>
+
+    <label for="apellidos">Apellidos</label> <br>
+    <input type="text" name="apellidos" /> <br>
+
+    <label for="email">email</label> <br> 
+    <input type="email" name="email" /> <br>
+
+    <label for="mensaje">mensaje</label> <br>
+    <textarea name="mensaje" cols="30" rows="10"></textarea> <br>
+
+    <button type="submit" value="Enviar">Enviar</button> <br>
+
+  </form>
+</h2>
+
