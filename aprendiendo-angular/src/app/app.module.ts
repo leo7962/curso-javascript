@@ -17,6 +17,7 @@ import { ExternoComponent } from './externo/externo.component';
     ZapatillasComponent,
     CursosComponent,
     HomeComponent,
+    ExternoComponent
   ],
   imports: [
     BrowserModule,
