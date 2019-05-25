@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Poo y TypeScript",
+    "\\aprendiendo-angular",
+    "\\aprendiendo-angular\\src",
+    "\\aprendiendo-angular\\src\\app",
     "\\Poo y TypeScript\\js"
   ],
-  "SelectedNode": "\\Poo y TypeScript\\js\\camiseta.ts",
+  "SelectedNode": "\\aprendiendo-angular\\src\\app\\app.component.ts",
   "PreviewInSolutionExplorer": false
 }
