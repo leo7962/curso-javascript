@@ -9,15 +9,17 @@ import { ContactoUsuario } from '../models/contacto.usuario';
 export class ContactoComponent implements OnInit {
   public usuario: ContactoUsuario;
 
-  constructor() { 
+  constructor() {
     this.usuario = new ContactoUsuario('', '', '', '');
   }
 
   ngOnInit() {
   }
 
-  onSubtmit(){
-    console.log("Evento Submit publicado");
+  onSubtmit(form) {
+    form.reset();
+    console.log(this.usuario);
+    
   }
 
 }
