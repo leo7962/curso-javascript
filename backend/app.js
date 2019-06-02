@@ -14,7 +14,8 @@ app.use(bodyParser.json());
 
 //Rutas
 
-app.use('/api',project_routes);
+app.use('/api', project_routes);
+
 
 // app.get('/', (req, res) => {
 //     res.status(200).send(
@@ -32,6 +33,7 @@ app.use('/api',project_routes);
 //         message: "Hola Leo desde mi API de NODE.js"
 //     });
 // });
+
 
 //Exportar
 module.exports = app;
