@@ -12,9 +12,19 @@ app.use(bodyParser.json());
 
 //Cors
 
+// Configurar cabeceras y cors, * cponer URL
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+    next();
+});
+
 //Rutas
 
-app.use('/api',project_routes);
+app.use('/api', project_routes);
+
 
 // app.get('/', (req, res) => {
 //     res.status(200).send(
@@ -32,6 +42,7 @@ app.use('/api',project_routes);
 //         message: "Hola Leo desde mi API de NODE.js"
 //     });
 // });
+
 
 //Exportar
 module.exports = app;
