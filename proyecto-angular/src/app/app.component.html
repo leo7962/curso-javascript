@@ -1,0 +1,17 @@
+<header>
+  <ul>
+    <li> <a [routerLink]="[ '/sobre-mi']">Sobre mí</a></li>
+    <li> <a [routerLink]="[ '/proyectos']">Proyectos</a></li>
+    <li id="logo"><a href="#">LH</a></li>
+    <li> <a [routerLink]="[ '/crear-proyecto']">Crear proyecto</a></li>
+    <li> <a [routerLink]="[ '/contacto']">Contacto</a></li>
+  </ul>
+</header>
+
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+
+<footer>
+  Desarrollado por Leonardo Fabián Hernández Peña &copy;
+</footer>
