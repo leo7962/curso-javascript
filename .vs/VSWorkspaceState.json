@@ -3,8 +3,9 @@
     "",
     "\\aprendiendo-angular",
     "\\aprendiendo-angular\\src",
-    "\\aprendiendo-angular\\src\\app"
+    "\\aprendiendo-angular\\src\\app",
+    "\\aprendiendo-angular\\src\\app\\home"
   ],
-  "SelectedNode": "\\aprendiendo-angular\\src\\app\\app.module.ts",
+  "SelectedNode": "\\aprendiendo-angular\\src\\app\\home\\home.component.ts",
   "PreviewInSolutionExplorer": false
 }
