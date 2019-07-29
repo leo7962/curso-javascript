@@ -1,3 +1,45 @@
-<p>
-  create works!
-</p>
+<div class="container">
+  <h2> {{title}} </h2>
+
+  <div class="success" *ngIf="status == 'success'">
+    El proyecto se ha insertado correctamente, ingrese <a href="##">aquí</a> para visualizarlo. 
+  </div>
+  <div class="failed" *ngIf="status == 'failed'">
+    El proyecto no se ha podido crear, por favor, intenteló nuevamente.
+  </div>
+
+  <form action="" #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+    <p>
+      <label for="name">Nombre</label>
+      <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required>
+      <span class="form_error" *ngIf="name.touched && !name.valid">El nombre es requerido</span>
+    </p>
+    <p>
+      <label for="name">Descripción</label>
+      <textarea name="description" #description="ngModel" cols="30" rows="10" [(ngModel)]="project.description"
+        required></textarea>
+      <span class="form_error" *ngIf="description.touched && !description.valid">Una descripción es requerida</span>
+    </p>
+    <p>
+      <label for="name">Categoría</label>
+      <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required>
+      <span class="form_error" *ngIf="category.touched && !category.valid">Escriba una categoria</span>
+    </p>
+    <p>
+      <label for="name">Año de lanzamiento</label>
+      <input type="number" name="year" #year="ngModel" [(ngModel)]="project.year">
+    </p>
+    <p>
+      <label for="name">Lenguaje en que fue realizado</label>
+      <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs" required>
+      <span class="form_error" *ngIf="langs.touched && !langs.valid">Escriba el lenguaje en que fue realizadó el
+        proyecto</span>
+    </p>
+    <p>
+      <label for="image">Imagen del proyecto</label>
+      <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" >
+    </p>
+
+    <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid">
+  </form>
+</div>
