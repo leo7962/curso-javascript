@@ -31,28 +31,30 @@ export class CreateComponent implements OnInit {
   }
 
   onSubmit(form){
-    
-    //Guardar los datos básicos
+    // Guardar los datos básicos
     this._ProjectService.saveProject(this.project).subscribe(
       response => {
-        if(response.project){
+        if (response.project) {
          
 
-          //Subir la imagen a Mongo
-          this._uploadService.makeFileRequest(Global.url+"upload-image"+response.project._id, [], this.filesToUpload, 'image').then((result:any) =>{
+          //Subir la imagen
+          this._uploadService.makeFileRequest(Global.url+"upload-image/"+response.project._id,[],this.filesToUpload,'image')
+          .then((result:any) => {
+
+            console.log(result);
+
             this.status = 'success';
-            console.log(result);   
-            form.reset();   
+            form.reset();
           });
 
-          
-        }else{
-          this.status ='failed';
+         
+        } else {
+          this.status = 'failed';
         }
-        
       },
-      error =>{
+      error => {
         console.log(<any>error);
+        
       }
     );
   }
