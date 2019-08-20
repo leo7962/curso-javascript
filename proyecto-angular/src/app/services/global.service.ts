@@ -4,6 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class GlobalService {
-  url: 'http://localhost:3700/api'
+  url: 'http://localhost:3700/api';
   constructor() { }
 }
