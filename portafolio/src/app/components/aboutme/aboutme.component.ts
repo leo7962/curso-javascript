@@ -15,7 +15,7 @@ export class AboutmeComponent implements OnInit {
     this.title = "Leonardo Fabián Hernández Peña";
     this.subtitle = "Desarrollador Web";
     this.email = "leo9622@gmail.com";
-   }
+  }
 
   ngOnInit() {
   }

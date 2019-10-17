@@ -8,12 +8,12 @@ import { ProjectsComponent } from "./components/projects/projects.component";
 import { ErrorComponent } from "./components/error/error.component";
 
 const routes: Routes = [
-  {path:'', component: AboutmeComponent},
-  {path: 'sobre-mi', component: AboutmeComponent},
-  {path:'contacto', component: ContactComponent},
-  {path:'crear-proyecto', component: CreateComponent},
-  {path:'proyectos', component: ProjectsComponent},
-  {path:'**', component: ErrorComponent}
+  { path: '', component: AboutmeComponent },
+  { path: 'sobre-mi', component: AboutmeComponent },
+  { path: 'contacto', component: ContactComponent },
+  { path: 'crear-proyecto', component: CreateComponent },
+  { path: 'proyectos', component: ProjectsComponent },
+  { path: '**', component: ErrorComponent }
 ];
 
 @NgModule({
